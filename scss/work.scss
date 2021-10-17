@@ -85,7 +85,7 @@
     grid-template-rows: repeat(4, 1fr);
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 428px) {
   .work-item:active > .work-text {
     opacity: 1;
   }
