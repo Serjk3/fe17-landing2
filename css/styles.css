@@ -52,6 +52,28 @@ p {
   font-weight: 400;
 }
 
+.gotop {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+.gotop i {
+  color: #ff4343;
+  font-size: 3rem;
+  border-radius: 50%;
+}
+.gotop i:hover, .gotop i:focus {
+  color: #e71414;
+}
+.gotop i:active {
+  color: #ff4343;
+  -webkit-box-shadow: 1px 1px 30px #ff4343;
+          box-shadow: 1px 1px 30px #ff4343;
+}
+
 .btn {
   padding: 1.5rem 5.5rem;
   background: #ff4343;

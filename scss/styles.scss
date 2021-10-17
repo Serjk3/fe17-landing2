@@ -97,6 +97,28 @@ p {
   font-weight: 400;
 }
 
+.gotop {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+  & i {
+    color: $red;
+    font-size: 3rem;
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+      color: $red_h;
+    }
+    &:active {
+      color: $red;
+      box-shadow: 1px 1px 30px $red;
+    }
+  }
+}
+
 .btn {
   @include btn;
   &:hover {
