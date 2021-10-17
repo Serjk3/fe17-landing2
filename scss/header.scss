@@ -1,9 +1,10 @@
 .header {
   width: 100%;
   padding: 25px 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  transition: all 0.3s ease-out;
   z-index: 999;
   &-wrapper {
     display: flex;
@@ -127,7 +128,7 @@
     display: block;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 428px) {
   html {
     font-size: 0.5625rem;
   }
