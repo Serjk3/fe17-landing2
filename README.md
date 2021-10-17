@@ -1,1 +1,1 @@
-serjk3.github.io/fe17-landing2/ 
+https://serjk3.github.io/fe17-landing2/
