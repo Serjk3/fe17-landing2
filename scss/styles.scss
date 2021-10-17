@@ -1,0 +1,153 @@
+// Цвета проекта
+$black: #000000;
+$red: #ff4343;
+$red_h: #e71414;
+$work: rgba(255, 67, 67, 0.8);
+$work_a: rgba(185, 12, 12, 0.8);
+$white: #ffffff;
+$gray: #6c7279;
+$gray_team: #c6cbcd;
+$border: 1px solid #babbc5;
+
+// Миксины
+@mixin btn {
+  padding: 1.5rem 5.5rem;
+  background: $red;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+@mixin btn_h {
+  background: $red_h;
+}
+@mixin btn_a {
+  background: $red;
+  box-shadow: 4px 4px 30px $red;
+}
+@mixin btn_link {
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+}
+
+@mixin dots_n {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #7e5d6f;
+  cursor: pointer;
+}
+@mixin dots_a {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #7e5d6f;
+  cursor: pointer;
+}
+
+// Подключение шрифтов
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+h5 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+h6 {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.btn {
+  @include btn;
+  &:hover {
+    @include btn_h;
+  }
+  &:active {
+    @include btn_a;
+  }
+  &_link {
+    @include btn_link;
+  }
+}
+
+.fe-facebook:hover {
+  color: #445c8f;
+}
+.fe-twetter:hover {
+  color: #18a1d6;
+}
+.fe-linkedin:hover {
+  color: #1d7199;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 97%;
+  }
+}
+@media (max-width: 320px) {
+  .btn {
+    width: 100%;
+    &:hover {
+      display: none;
+    }
+    &:active {
+      @include btn_a;
+    }
+    &_link {
+      box-shadow: 1px 1px 5px $red;
+    }
+  }
+}
+
+// Подключение файлов стилей
+@import "null.css"; // файл обнуления стилей
+@import "fe17-font.css"; // шрифт IcoMoon
+@import "header.scss";
+@import "fullscreen.scss";
+@import "features.scss";
+@import "work.scss";
+@import "ourteam.scss";
+@import "slider.scss";
+@import "download.scss";
+@import "footer.scss";
