@@ -11,10 +11,7 @@ $border: 1px solid #babbc5;
 
 // Миксины
 @mixin btn {
-  padding: 1.5rem 5.5rem;
-  background: $red;
-  cursor: pointer;
-  transition: all 0.2s ease-out;
+  display: flex;
 }
 @mixin btn_h {
   background: $red_h;
@@ -24,11 +21,14 @@ $border: 1px solid #babbc5;
   box-shadow: 4px 4px 30px $red;
 }
 @mixin btn_link {
+  padding: 1.5rem 5.5rem;
+  background: $red;
+  transition: all 0.2s ease-out;
   font-family: Raleway;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 900;
-  line-height: 28px;
+  line-height: 1.75rem;
   text-align: center;
   color: $white;
   text-transform: uppercase;
@@ -119,7 +119,7 @@ p {
   }
 }
 
-.btn {
+.btn_link {
   @include btn;
   &:hover {
     @include btn_h;
@@ -127,7 +127,7 @@ p {
   &:active {
     @include btn_a;
   }
-  &_link {
+  & {
     @include btn_link;
   }
 }

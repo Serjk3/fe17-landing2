@@ -74,27 +74,29 @@ p {
           box-shadow: 1px 1px 30px #ff4343;
 }
 
-.btn {
-  padding: 1.5rem 5.5rem;
-  background: #ff4343;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+.btn_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.btn:hover {
+.btn_link:hover {
   background: #e71414;
 }
-.btn:active {
+.btn_link:active {
   background: #ff4343;
   -webkit-box-shadow: 4px 4px 30px #ff4343;
           box-shadow: 4px 4px 30px #ff4343;
 }
 .btn_link {
+  padding: 1.5rem 5.5rem;
+  background: #ff4343;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   font-family: Raleway;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 900;
-  line-height: 28px;
+  line-height: 1.75rem;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
