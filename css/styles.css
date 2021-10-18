@@ -133,7 +133,7 @@ p {
     display: block;
     width: 100%;
   }
-  .btn_link {
+  .btn_link:active {
     -webkit-box-shadow: 1px 1px 5px #ff4343;
             box-shadow: 1px 1px 5px #ff4343;
   }

@@ -155,9 +155,9 @@ p {
     &_link {
       display: block;
       width: 100%;
-    }
-    &_link {
-      box-shadow: 1px 1px 5px $red;
+      &:active {
+        box-shadow: 1px 1px 5px $red;
+      }
     }
   }
 }
