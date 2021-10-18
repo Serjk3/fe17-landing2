@@ -12,6 +12,8 @@ $border: 1px solid #babbc5;
 // Миксины
 @mixin btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @mixin btn_h {
   background: $red_h;
