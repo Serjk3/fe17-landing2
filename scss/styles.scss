@@ -121,16 +121,16 @@ p {
   }
 }
 
-.btn_link {
+.btn {
   @include btn;
-  &:hover {
-    @include btn_h;
-  }
-  &:active {
-    @include btn_a;
-  }
-  & {
+  &_link {
     @include btn_link;
+    &:hover {
+      @include btn_h;
+    }
+    &:active {
+      @include btn_a;
+    }
   }
 }
 
@@ -152,11 +152,9 @@ p {
 @media (max-width: 428px) {
   .btn {
     width: 100%;
-    &:hover {
-      display: none;
-    }
-    &:active {
-      @include btn_a;
+    &_link {
+      display: block;
+      width: 100%;
     }
     &_link {
       box-shadow: 1px 1px 5px $red;

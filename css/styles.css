@@ -74,7 +74,7 @@ p {
           box-shadow: 1px 1px 30px #ff4343;
 }
 
-.btn_link {
+.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,14 +84,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.btn_link:hover {
-  background: #e71414;
-}
-.btn_link:active {
-  background: #ff4343;
-  -webkit-box-shadow: 4px 4px 30px #ff4343;
-          box-shadow: 4px 4px 30px #ff4343;
 }
 .btn_link {
   padding: 1.5rem 5.5rem;
@@ -106,6 +98,14 @@ p {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+}
+.btn_link:hover {
+  background: #e71414;
+}
+.btn_link:active {
+  background: #ff4343;
+  -webkit-box-shadow: 4px 4px 30px #ff4343;
+          box-shadow: 4px 4px 30px #ff4343;
 }
 
 .fe-facebook:hover {
@@ -129,13 +129,9 @@ p {
   .btn {
     width: 100%;
   }
-  .btn:hover {
-    display: none;
-  }
-  .btn:active {
-    background: #ff4343;
-    -webkit-box-shadow: 4px 4px 30px #ff4343;
-            box-shadow: 4px 4px 30px #ff4343;
+  .btn_link {
+    display: block;
+    width: 100%;
   }
   .btn_link {
     -webkit-box-shadow: 1px 1px 5px #ff4343;
