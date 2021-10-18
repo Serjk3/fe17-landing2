@@ -265,15 +265,11 @@ p {
   .header-wrapper {
     border: none;
   }
-  .header-logo {
-    margin: 0 15px;
-  }
   .header-menu {
     display: none;
   }
 
   .mobile-menu {
-    margin: 0 15px;
     display: block;
   }
 }
