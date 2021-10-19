@@ -56,7 +56,7 @@
 }
 @media (max-width: 768px) {
   .fullscreen {
-    padding: 170px 0;
+    padding: 130px 0;
     &-title {
       padding: 0;
     }
@@ -65,9 +65,9 @@
     }
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 428px) {
   .fullscreen {
-    padding: 130px 0;
+    padding: 170px 0;
     &-subtitle {
       padding: 0;
     }

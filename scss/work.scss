@@ -19,6 +19,20 @@
       transition: all 0.2s ease-out;
       left: 100%;
     }
+    &:hover::after,
+    &:focus::after {
+      left: 0;
+      opacity: 1;
+    }
+    &:active::after {
+      background-color: $work_a;
+    }
+    &:hover > .work-text {
+      opacity: 1;
+    }
+    &:hover > img {
+      transform: scale(1.3);
+    }
   }
   &-image {
     width: 100%;
@@ -37,6 +51,12 @@
     z-index: 1;
     opacity: 0;
     transition: all 0.3s ease-out;
+    &:hover > .work-title,
+    &:focus > .work-title,
+    &:hover > .work-subtitle,
+    &:focus > .work-subtitle {
+      right: 0;
+    }
   }
   &-title {
     text-transform: uppercase;
@@ -55,26 +75,6 @@
     position: relative;
     right: 100%;
     transition: all 0.8s ease-out;
-  }
-  &-item:hover::after,
-  &-item:focus::after {
-    left: 0;
-    opacity: 1;
-  }
-  &-item:active::after {
-    background-color: $work_a;
-  }
-  &-item:hover > &-text {
-    opacity: 1;
-  }
-  &-item:hover > img {
-    transform: scale(1.3);
-  }
-  &-text:hover > &-title,
-  &-text:focus > &-title,
-  &-text:hover > &-subtitle,
-  &-text:focus > &-subtitle {
-    right: 0;
   }
 }
 
