@@ -41,6 +41,9 @@
   &__item {
     margin-right: 3rem;
     transition: all 0.2s ease-out;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &__item a {
     font-size: 0.8125rem;
@@ -49,38 +52,35 @@
     color: $white;
     position: relative;
     transition: all 0.2s ease-out;
-  }
-  &__item a::after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    transition: all 0.2s ease-out;
-  }
-  &__item a:hover::after,
-  &__item a:focus::after {
-    opacity: 1;
-  }
-  &__item a::after {
-    transform: scale(0);
-    transform-origin: center;
-  }
-  &__item a:hover::after,
-  &__item a:focus::after {
-    transform: scale(1);
-  }
-  &__item a:active {
-    color: $red_h;
-  }
-  &__item a:active::after {
-    background-color: $red_h;
-  }
-  &__item:last-child {
-    margin-right: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -32px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      transition: all 0.2s ease-out;
+    }
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+    &::after {
+      transform: scale(0);
+      transform-origin: center;
+    }
+    &:hover::after,
+    &:focus::after {
+      transform: scale(1);
+    }
+    &:active {
+      color: $red_h;
+    }
+    &:active::after {
+      background-color: $red_h;
+    }
   }
 }
 
