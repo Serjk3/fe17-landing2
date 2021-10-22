@@ -90,11 +90,16 @@
   }
 }
 @media (max-width: 428px) {
-  .work-item:active > .work-text {
+  .work-item::after {
+    background-color: rgba(65, 65, 65, 0.4);
+    opacity: 1;
+    left: 0;
+  }
+  .work-text {
     opacity: 1;
   }
-  .work-text:active > .work-title,
-  .work-text:hover > .work-subtitle {
+  .work-title,
+  .work-subtitle {
     right: 0;
   }
 }
