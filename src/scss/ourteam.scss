@@ -5,6 +5,33 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 -15px;
+    .slick {
+      &-track {
+        display: flex;
+      }
+      &-list {
+        overflow: hidden;
+      }
+      &-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0 0;
+        & li {
+          list-style: none;
+          margin: 0 12.5px;
+          &.slick-active button {
+            @include dots_a;
+          }
+        }
+      }
+      &-dots button {
+        font-size: 0;
+        background-color: transparent;
+        @include dots_n;
+        transition: all 0.3s ease-out;
+      }
+    }
   }
   &-item {
     max-width: 260px;

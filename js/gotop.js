@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  //fade in/out based on scrollTop value
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
       $(".gotop").fadeIn();
@@ -14,7 +13,6 @@ $(document).ready(function () {
     }
   });
 
-  // scroll body to 0px on click
   $(".gotop").click(function () {
     $("body,html").animate(
       {
